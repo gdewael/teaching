@@ -78,7 +78,10 @@
        height="69.00444"
        x="9.2949638"
        y="28.080687"
-       ry="3.2864902" />
+       ry="3.2864902"
+       inkscape:export-filename="/home/gdewael/Work/teaching/predmod/CNN/channels.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        style="fill:#b3b3b3;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:0.42726201"
        d="M 34.294755,75.688778 57.522827,62.278046 38.646969,57.220277 15.418897,70.631009 Z"
