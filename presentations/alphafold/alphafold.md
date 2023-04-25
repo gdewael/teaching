@@ -34,7 +34,7 @@ math: katex
 5. Future perspectives
 
 
-`Exclaimer: The discussed parts of AF are extremely cherry-picked`
+`Disclaimer: The discussed parts of AF are extremely cherry-picked`
 
 ----
 
