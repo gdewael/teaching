@@ -64,7 +64,7 @@ math: katex
 
 Given to model as multi-dimensional input
 
-![width:600px center](https://raw.githubusercontent.com/gdewael/teaching/main/presentations/alphafold/img/inputs.png)
+![width:500px center](https://raw.githubusercontent.com/gdewael/teaching/main/presentations/alphafold/img/inputs.png)
 
 ----
 
@@ -92,7 +92,7 @@ Convolutions are **equivariant** to translations $T(2)$
 Geometric intuition:
 Similarly, operations on molecules should be **equivariant** to $SE(3)$, which includes translations and rotations in 3D euclidean space.
 
-![width:600px center](https://raw.githubusercontent.com/gdewael/teaching/main/presentations/alphafold/img/SE3_transformers.png)
+![width:400px center](https://raw.githubusercontent.com/gdewael/teaching/main/presentations/alphafold/img/SE3_transformers.png)
 
 Through modified self-attention (transformer)
 
