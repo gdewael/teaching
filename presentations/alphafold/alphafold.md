@@ -100,7 +100,6 @@ Through modified self-attention (transformer)
 
 ## 4. Putting it together
 
-
 ![width:1000px center](https://i0.wp.com/www.blopig.com/blog/wp-content/uploads/2021/07/image-3.png?ssl=1)
 
 ----
@@ -109,12 +108,5 @@ Through modified self-attention (transformer)
 
 Learning interactions: Deep learning :handshake: Structural/physical models
 
-![width:1000px center](https://www.researchgate.net/profile/Gabriele-Corso/publication/364163314/figure/fig1/AS:11431281088008531@1664947354076/Overview-of-DIFFDOCK-Left-The-model-takes-as-input-the-separate-ligand-and-protein.png)
-
-----
-
-## What's next
-
-Learning interactions: Deep learning :handshake: Structural/physical models
 ![width:1000px center](https://www.marktechpost.com/wp-content/uploads/2022/07/Screen-Shot-2022-07-15-at-4.00.19-PM.png
 )
