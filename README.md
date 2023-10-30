@@ -1,7 +1,7 @@
 # teaching
 Collection of stuff done for teaching at bw26
 
-
+A lot of my teaching stuffs are also now located on the [MLLS course GitHub](https://github.com/bioml-ugent/MLLS).
 
 ### Notes to self:
 - Jupyter notebooks on GitHub can be linked to colab and shared with students without having to upload to Drive. In colab: "Open > GitHub" and copy link.
