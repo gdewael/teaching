@@ -6,7 +6,7 @@
 <meta content="yes" name="apple-mobile-web-app-capable"/>
 <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"/>
 <title>transformers slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script><script type="module">
-  import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.0/mermaid.esm.min.mjs';
+  import mermaid from 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs';
   mermaid.initialize({ startOnLoad: true });
 </script>
 <!-- General and theme style sheets -->
@@ -8378,7 +8378,7 @@ tensor([[[-0.65,  1.61,  1.12,  1.10,  1.15,  1.37],
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Permutation-invariance-and-positional-information">Permutation invariance and positional information<a class="anchor-link" href="#Permutation-invariance-and-positional-information">¶</a></h3><img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/gdewael/teaching/main/presentations/transformers/img/permutationinvariance.png" width="600"/>
+<h3 id="Permutation-invariance-and-positional-information">Permutation invariance and positional information<a class="anchor-link" href="#Permutation-invariance-and-positional-information">¶</a></h3><img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/gdewael/teaching/main/presentations/transformers/img/permutequivar.png" width="2200"/>
 <p>Due to its design, shuffling inputs just shuffles outputs =&gt; The order in the sequence does not matter.</p>
 </div>
 </div>
@@ -8393,6 +8393,17 @@ tensor([[[-0.65,  1.61,  1.12,  1.10,  1.15,  1.37],
 <img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/gdewael/teaching/main/presentations/transformers/img/positionalenc.png" width="500"/>
 <p>Positional encodings give a "signal" to the transformer signifying position.</p>
 <p>Note: positional encodings can be made for 2D, 3D inputs ...</p>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Positional-encodings-for-vision-transformers">Positional encodings for vision transformers<a class="anchor-link" href="#Positional-encodings-for-vision-transformers">¶</a></h3><img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/gdewael/teaching/main/presentations/transformers/img/vision_transformer.png" width="500"/>
 </div>
 </div>
 </div>
@@ -8593,7 +8604,30 @@ tensor([[[-0.65,  1.61,  1.12,  1.10,  1.15,  1.37],
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="From-self-attention-to-cross-attention">From self-attention to cross-attention<a class="anchor-link" href="#From-self-attention-to-cross-attention">¶</a></h3><img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/gdewael/teaching/main/presentations/transformers/img/machine_translation.png" width="250"/>
+<p>$\texttt{softmax}(\frac{\boldsymbol{Q}\boldsymbol{K}^\top}{\sqrt{d}}) \boldsymbol{V}$</p>
+<p>To go from one "source" set of data tokens to another "target" set of data tokens:</p>
+<ul>
+<li>The keys $K$ and values $V$ come from the source domain</li>
+<li>The queries $Q$ come from the target domain</li>
+</ul>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Cross-attention">Cross-attention<a class="anchor-link" href="#Cross-attention">¶</a></h3><img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/gdewael/teaching/main/presentations/transformers/img/crossattn.png" width="700"/>
+<p>$\texttt{softmax}(\frac{\boldsymbol{Q}\boldsymbol{K}^\top}{\sqrt{d}}) \boldsymbol{V}$</p>
+<p>To go from one "source" set of data tokens to another "target" set of data tokens:</p>
+<ul>
+<li>The keys $K$ and values $V$ come from the source domain (red)</li>
+<li>The queries $Q$ come from the target domain (blue)</li>
+</ul>
 </div>
 </div>
 </div>
@@ -8850,37 +8884,24 @@ tensor([[[-0.17, -0.47, -0.31, -0.86],
 </div>
 </div>
 </div>
-</div>
+</div></div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Take-home-message:-the-transformer">Take home message: the transformer<a class="anchor-link" href="#Take-home-message:-the-transformer">¶</a></h3><img alt="No description has been provided for this image" src="https://raw.githubusercontent.com/gdewael/teaching/main/presentations/transformers/img/whatwewant.png" width="500"/>
+<p>As opposed to CNNs, RNNs, ...</p>
+<ul>
+<li>Learn interactions between all inputs</li>
+<li>"Freedom" to learn any pattern: high skill ceiling, but need lots of data</li>
+<li>Because of this: the basis for almost all big-news advancements in AI</li>
+</ul>
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-</div>
-</div>
-</div>
-</div></div></section></section>
+</div></section></section>
 </div>
 </div>
 </main>
@@ -8905,7 +8926,10 @@ require(
             history: true,
             transition: "slide",
             slideNumber: "",
-            plugins: [RevealNotes]
+            plugins: [RevealNotes],
+            width: 960,
+			      height: 700,
+
         });
 
         var update = function(event){
